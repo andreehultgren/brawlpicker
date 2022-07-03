@@ -22,15 +22,12 @@ export default function ListGameModes({ detailed, sorting }: IProps) {
       {gameModes.map((gameMode) => {
         return (
           <Link
+            key={gameMode.name}
             href={`/gamemodes/${gameMode.name}`}
             style={{ width: "100%", height: "100%" }}
           >
             <a style={{ width: "100%", height: "100%" }}>
-              <GameMode
-                key={gameMode.name}
-                gameMode={gameMode}
-                detailed={!!detailed}
-              />
+              <GameMode gameMode={gameMode} detailed={!!detailed} />
             </a>
           </Link>
         );

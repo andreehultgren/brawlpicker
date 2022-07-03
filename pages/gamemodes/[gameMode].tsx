@@ -17,7 +17,7 @@ import {
 } from "../../components";
 import GameMode from "../../components/GameMode";
 
-export default function () {
+export default function GameModeView() {
   const [draggingMap, setDraggingMap] = useState<string>("");
   const router = useRouter();
   const gameModeName: string =
@@ -57,6 +57,7 @@ export default function () {
         <div className="flexWrap">
           {gameMaps.map((map) => (
             <DraggableComponent
+              key={map.name}
               type="map"
               onPickup={() => {
                 setDraggingMap(map.name);
@@ -86,6 +87,7 @@ export default function () {
         <div className="flexWrap">
           {remainingMaps.map((map) => (
             <DraggableComponent
+              key={map.name}
               type="map"
               onPickup={() => {
                 setDraggingMap(map.name);

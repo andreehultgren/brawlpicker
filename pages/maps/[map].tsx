@@ -18,7 +18,7 @@ import {
 } from "../../components";
 import styles from "../../styles/Map.module.css";
 
-export default function () {
+export default function MapView() {
   const [draggingBrawler, setDraggingBrawler] = useState<string>("");
   const router = useRouter();
   const mapName: string =
