@@ -1,0 +1,23 @@
+.brawlerList{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+.brawler{
+  width:100px;
+  grid-row:1;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 0.2rem black;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+
+.brawlerName{
+  text-align: center ;
+  margin:0.5rem;
+}

@@ -1,0 +1,22 @@
+
+.navbar {
+  width:100%;
+  background-color: #232429;
+  display:flex;
+  justify-content: center;
+}
+
+.splitter{
+  
+  color:white; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left, .right{
+  display: grid;
+  grid-auto-flow: column; 
+  grid-gap: 1rem;
+}

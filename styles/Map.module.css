@@ -1,0 +1,44 @@
+.mapList{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+.map{
+  width:200px;
+  grid-row:1;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 0.2rem black;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+
+.mapName{
+  text-align: center ;
+  margin:0.5rem;
+}
+
+.split{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+.left{
+
+}
+.right{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width:100%;
+}
+.right > div{
+  width:100%;
+}
